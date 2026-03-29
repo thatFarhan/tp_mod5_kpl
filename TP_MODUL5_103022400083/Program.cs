@@ -1,15 +1,16 @@
-<<<<<<< HEAD
-﻿HaloGeneric haloGeneric = new HaloGeneric();
+HaloGeneric haloGeneric = new HaloGeneric();
 haloGeneric.SapaUser("Farhan");
+
+DataGeneric<long> nim = new DataGeneric<long>(103022400083);
+nim.PrintData();
 
 class HaloGeneric
 {
     public void SapaUser(string x)
     {
         Console.WriteLine("Halo user " + x);
-=======
-﻿DataGeneric<long> nim = new DataGeneric<long>(103022400083);
-nim.PrintData();
+    }
+}
 
 class DataGeneric<T>
 {
@@ -23,6 +24,5 @@ class DataGeneric<T>
     public void PrintData()
     {
         Console.WriteLine("Data yang tersimpan adalah: " + data);
->>>>>>> generic-class
     }
 }
