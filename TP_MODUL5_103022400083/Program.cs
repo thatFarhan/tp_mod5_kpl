@@ -1,14 +1,14 @@
 HaloGeneric haloGeneric = new HaloGeneric();
-haloGeneric.SapaUser("Farhan");
+haloGeneric.SapaUser<string>("Farhan");
 
 DataGeneric<long> nim = new DataGeneric<long>(103022400083);
 nim.PrintData();
 
 class HaloGeneric
 {
-    public void SapaUser(string x)
+    public void SapaUser<T>(T data)
     {
-        Console.WriteLine("Halo user " + x);
+        Console.WriteLine("Halo user " + data);
     }
 }
 
